@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+application{
+    mainClassName="Application"
+    run{
+    standardInput=System.in}
+}
+
+group 'ME'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group:'com.intellij', name:'annotations',version:'12.0'
+    implementation group: 'com.google.inject', name:'guice',version: '4.2.2'
+}
